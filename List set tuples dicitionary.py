@@ -41,3 +41,23 @@ print(place)
 place.add(1)
 print(place)
 place.discard(23)
+
+d={
+    "name":"geetha","age":23, "students":["prema","madurai"]
+}
+print(d)
+print(d.keys())
+print(d.values())
+d["age"]=22
+print(d)
+d["color"]="red"
+d.update({"location":"chennai"})
+d.pop("age")
+#d.del["age"]
+#d.clear()
+print(d)
+
+d={"name":"geetha","age":23,"color":"red","fruits":"apple"}
+d.update({"color":"orange"})
+print(d)
+   
