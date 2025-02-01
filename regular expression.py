@@ -23,5 +23,10 @@ print(a)
 a=re.findall("he.+o",text)
 print(a)
 
+#{}specific character
+a=re.findall("he.{3}0",text)
+print(a)
+
+
 
 
