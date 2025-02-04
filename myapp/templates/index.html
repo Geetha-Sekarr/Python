@@ -1,12 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django framework</title>
-</head>
-<body>
-    <h1>Django basic concepts</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus sed distinctio non dignissimos ad deserunt officiis tempore, iste placeat accusamus eum inventore modi voluptatem rerum. Neque praesentium magnam cum.</p>
-</body>
+{% extends 'base.html' %}
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        {% block content %}
+          <form action=""><h1>Product</h1></form>
+          Name: <input type="text" name="mobile"><br>
+
+          Contact: <input type="text" name="contact"><br>
+
+          Addresss: <input type="text" name="address"><br>
+
+          <input type="submit" value="submit">
+        {% endblock %}  
+    </body>
 </html>
+
