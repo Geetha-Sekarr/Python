@@ -25,3 +25,27 @@ class MyTestCase(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
+#normal opreations
+def add_numbers(a,b):
+    return a+b
+def multiple_numbers(a,b):
+    return a*b
+
+
+#test_math opreations
+import unittest
+from math_operations import add_numbers, multiply_numbers
+
+# Test case for add_numbers function
+class TestAddNumbers(unittest.TestCase):
+    def test_add(self):
+        self.assertEqual(add_numbers(2, 3), 5)
+        self.assertEqual(add_numbers(-1, 1), 1)
+        self.assertEqual(add_numbers(0, 0), 0)
+
+# Test case for multiply_numbers function
+class TestMultiplyNumbers(unittest.TestCase):
+    def test_multiply(self):
+        self.assertEqual(multiply_numbers(2, 3), 6)
+        self.assertEqual(multiply_numbers(-1, 1), -1)
+        self.assertEqual(multiply_numbers(0, 5), 0)
