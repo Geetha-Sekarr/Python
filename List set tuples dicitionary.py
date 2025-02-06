@@ -60,4 +60,9 @@ print(d)
 d={"name":"geetha","age":23,"color":"red","fruits":"apple"}
 d.update({"color":"orange"})
 print(d)
-   
+
+
+a=dict()
+a={x: ord(x) for x in "hello"}
+v={x for x in a.values()}
+print(v)

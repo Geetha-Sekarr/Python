@@ -27,3 +27,16 @@ print(long_words)
 words = ["apple", "cat", "banana", "dog", "elephant"]
 long_words = list(filter(lambda word: len(word) > 3, words))
 print(long_words)
+
+
+
+# Lambda that ignores the first argument and returns the second argument
+my_lambda = lambda _, y: y
+
+print(my_lambda(10, 20)) 
+
+
+# List of tuples (name, age)
+people = [("Alice", 30), ("Bob", 25), ("Charlie", 35)]
+names = list(map(lambda _: _[0], people))
+print(names) 
