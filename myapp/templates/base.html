@@ -1,7 +1,9 @@
 {% include 'header.html'%}
+{% include 'navbar.html'%}
+
 <html>
     <head>
-        <title>Myapp</title>
+        <title>Navbar</title>
     </head>
     <body>
         {% block content %}
@@ -9,8 +11,3 @@
         {% endblock %}
     </body>
 </html>
-<script>
-    $(document).ready(function(){
-        $(".alert").hide(4000);
-    });
-</script>
